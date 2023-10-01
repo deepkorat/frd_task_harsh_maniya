@@ -116,8 +116,11 @@ while True:
             main_menu_type_of_dish()
         elif choice == 2:
             main_menu_price_range()
-        else:
+        elif choice == 3:
             main_menu_item_name()
+        else:
+            print("Thank you for coming...!!")
+            break
     except ValueError:
         print("No valid integer! Please try again ...")
 
