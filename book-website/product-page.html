@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Product View Page</title>
+    <style>
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-navbar">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/fiction.html">Fiction</a>
+                            <a class="dropdown-item" href="#">Non fiction</a>
+                            <a class="dropdown-item" href="#">Psychology</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 mr-3 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <a href="/add-to-cart.html" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color:white; padding-right:5px;" width="33"
+                        height="33" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                    </svg>
+                </a>
+
+            </div>
+        </nav>
+    </section>
+
+    <!-- Product book -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/atomic_habits.jpg" alt="Product" class="product-image">
+            </div>
+            <div class="col-md-6 product-details">
+                <h2>Atomic Habits</h2>
+                <p>People think that when you want to change your life, you need to think big.
+                    But world-renowned habits expert James Clear has discovered another way. He knows that real change
+                    comes from the compound effect of hundreds of small decisions-
+                    doing two push-ups a day, waking up five minutes early, or holding a single short phone call.</p>
+                <h3>Price: $241</h3>
+                <p>Available in stock</p>
+                <h5 class="bg-dark text-white mt-5 p-1">Product details</h5>
+                <p>
+                    <b>Publisher ‏ :</b> ‎ Random House Business Books (1 January 2018)
+                    <br>
+                    <b>Language ‏ :</b> ‎ English
+                    <br>
+                    <b>Paperback ‏ :</b> ‎ 320 pages
+                    <br>
+                    <b>ISBN-10 ‏ :</b> ‎ 1847941834
+                    <br>
+                    <b>ISBN-13 ‏ :</b> ‎ 978-1847941831
+                    <br>
+                    <b>Reading age ‏ :</b> ‎ Customer suggested age: 16 years and up
+                    <br>
+                    <b>Item Weight ‏ :</b> ‎ 310 g
+                    <br>
+                    <b>Dimensions ‏ :</b> ‎ 22.9 x 15.2 x 1.93 cm
+                    <br>
+                    <b>Country of Origin ‏ :</b> ‎ United Kingdom
+                    <br>
+                    <b>Quantity ‏ :</b> ‎ 1.00 count
+                    <br>
+                </p>
+                <a href="add-to-cart.html" class="btn btn-dark">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <section class="myfooter">
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2023 BookStore. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
