@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
      <!-- This is navbar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
           <a class="navbar-brand" href="#">Cosmetic Store</a>
@@ -40,14 +40,14 @@
 
 
      <div class="container mt-5">
-          <div class="jumbotron" style="background-image: url(/image/2.jpg); object-fit: contain; background-size: cover;">
+          <div class="jumbotron"
+               style="background-image: url(/image/2.jpg); object-fit: contain; background-size: cover;">
                <h3 class="display-4">Our Products</h3>
                <p class="lead">Let's explore our High-quality cosmetics.</p>
           </div>
      </div>
 
      <div class="container mt-5">
-          <h2>Our Products</h2>
           <div class="row">
                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card product-card">
@@ -157,6 +157,24 @@
 
           </div>
      </div>
+
+     <!-- footer -->
+     <div class="mt-auto">
+          <footer class="bg-secondary text-white text-center py-3">
+               <div class="row d-flex justify-content-around">
+                    <div>
+                         <h2>Cosmetic Store</h2>
+                         <p>&copy; 2023 Cosmetic Store. All Rights Reserved.</p>
+                    </div>
+                    <div>
+                         <h5>Links: </h5>
+                         <a href="/" class="nav-link text-light">Home</a>
+                         <a href="/product.html" class="nav-link text-light">Product</a>
+                    </div>
+               </div>
+          </footer>
+     </div>
+
 
      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>

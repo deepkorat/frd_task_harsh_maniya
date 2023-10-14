@@ -8,18 +8,104 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+    <!-- This is navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary ">
+        <a class="navbar-brand" href="#">Cosmetic Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/product.html">Product</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark  border rounded-sm" href="add-to-cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <b class="text-light">
+                            Cart
+                        </b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- product details -->
     <div class="container mt-5">
-        <div class="card">
-            <img src="product1.jpg" class="card-img-top" alt="Product 1">
-            <div class="card-body">
-                <h5 class="card-title">Product 1</h5>
-                <p class="card-text">Product description goes here.</p>
-                <p class="card-text"><strong>Price: $19.99</strong></p>
-                <a href="add-to-cart.html" class="btn btn-primary">Add to Cart</a>
+        <div class="">
+            <div class="row">
+
+                <div style="height:600px; " class="mr-5 pr-5">
+                    <img src="/image/p3.webp" style="object-fit: contain; height: 500px;" class="card-img-top"
+                        alt="Product 1">
+                </div>
+                <div class="card-body ml-5 pl-5">
+                    <h1 class="card-title">Mineral Foundation</h1>
+                    <h3 class="card-text text-danger">Rating: ★★★★☆</h3>
+                    <p class="card-text">Skin-Improving mineral makeup. Safe for sensitive skin.</p>
+                    <p class="card-text"><strong>Price: $19.99</strong></p>
+                    <a href="add-to-cart.html" class="btn btn-info ">Buy online</a>
+                    <hr class="mt-5 pt-4">
+
+                    <div>
+                        <h5 class="text-dark">Product Details:</h5>
+                        <br>
+                        <p style="width: 550px;">
+                            Discover the feeling of skin breathing freely. True Match Naturale™ re-invents makeup with
+                            carefully selected, 100% preservative-, talc- and fragrance-free minerals plus built-in
+                            professional brushes. This skin-improving mineral formula with SPF 19 covers flawlessly,
+                            leaves your skin soft and your tone even. It’s gentle. It’s minerals.
+                        </p>
+                        <p style="width: 550px;">
+                            Finish: Natural but radiant
+                            SPF: 19
+                            Coverage: Flawless coverage for 16H
+                            Skin Type: For all skin types. Safe for sensitive skin.
+                        </p>
+                        <p >
+                            Available in 12 true-to-skin shades in warms, neutrals, and cools.
+                        </p>
+                        <p style="width: 550px;">
+                            True Match™ Mineral Foundation was nominated by
+                            makeup.com in the Top 10 2016
+                            Best Drugstore Foundation!
+                        </p>
+
+                    </div>
+
+                </div>
+                <hr>
             </div>
         </div>
     </div>
+
+
+    <!-- footer -->
+    <div class="mt-auto">
+        <footer class="bg-secondary text-white text-center py-3">
+             <div class="row d-flex justify-content-around">
+                  <div>
+                       <h2>Cosmetic Store</h2>
+                       <p>&copy; 2023 Cosmetic Store. All Rights Reserved.</p>
+                  </div>
+                  <div >
+                       <h5>Links: </h5>
+                       <a href="/" class="nav-link text-light">Home</a>
+                       <a href="/product.html" class="nav-link text-light">Product</a>
+                  </div>
+             </div>
+        </footer>
+   </div>
+
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
