@@ -4,10 +4,15 @@ from .models import Category, Book
 
 main_bp = Blueprint('main', __name__)
 
+
+# to load data gloabally to all template
+@main_bp.context_processor
+def inject_user():
+    return dict(base_category=Category.query.order_by(Category.name).all())
+    
 @main_bp.route('/')
 def index():
-     base_category = Category.query.order_by(Category.name).all()
-     return render_template('index.html', categories = base_category)
+     return render_template('index.html')
 
 @main_bp.route('/books/<int:category_id>')
 def book(category_id):

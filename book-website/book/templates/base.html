@@ -18,7 +18,7 @@
   <section class="main-navbar">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">BookStore</a>
+      <a class="navbar-brand" href="{{url_for('main.index') }}">BookStore</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
               Category
             </a>
             <div class="dropdown-menu">
-              {% for category in categories %}
+              {% for category in base_category %}
                 <a class="dropdown-item" href="{{ url_for('main.book', category_id = category.id) }}">{{category.name}}</a>
               {% endfor %}
             </div>
