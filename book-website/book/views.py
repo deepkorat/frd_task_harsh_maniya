@@ -6,11 +6,16 @@ main_bp = Blueprint('main', __name__)
 
 @main_bp.route('/')
 def index():
-     # category = Category.query.order_by(Category.name).all()
-     category = ['ficiotn', 'none', '2 min kham']
+     category = Category.query.order_by(Category.name).all()
+     print(category)
      return render_template('index.html', categories = category)
 
-@main_bp.route('/category')
+@main_bp.route('/books/<int:categoryid>')
 def category():
      category = "Fiction"
-     return render_template('fiction.html', category=category)
+     return render_template('book.html', category=category)
+
+@main_bp.route('/tours/<int:cityid>')
+def citytours(cityid):
+    tours = Tour.query.filter(Tour.city_id==cityid)
+    return render_template('citytours.html', tours=tours)

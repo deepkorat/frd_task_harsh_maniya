@@ -37,10 +37,9 @@
               Category
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="{{ url_for('main.category') }}">Fiction</a>
-              <a class="dropdown-item" href="fiction.html">Non fiction</a>
-              <a class="dropdown-item" href="fiction.html">Psychology</a>
-              <a class="dropdown-item" href="fiction.html">History</a>
+              {% for category in categories %}
+                <a class="dropdown-item" href="{{ url_for('main.category', category_id = category.id) }}">{{category.name}}</a>
+              {% endfor %}
             </div>
           </li>
         </ul>

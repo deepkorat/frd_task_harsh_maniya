@@ -37,7 +37,7 @@ continuing.
 from flask import Blueprint
 from . import db
 from .models import Category, Book
-import datetime
+import json
 
 admin_bp = Blueprint('admin', __name__, url_prefix='/admin')
 
@@ -61,28 +61,28 @@ def dbseed():
     book1 = Book(category_id=Category1.id,\
         title= 'Atomic Habit',\
         author= 'James Clear',\
-        description= 'Tiny Changes, Remarkable Results. An Easy & Proven Way to Build a Good Habits & Break bad ones.',\
+        description = 'Tiny Changes, Remarkable Results. An Easy & Proven Way to Build a Good Habits & Break bad ones.',\
         price=300.99,\
         image='fiction-1.jpg')
 
     book2 = Book(category_id=Category1.id,\
         title= 'Believe in Yourself',\
         author= 'Dr. Joseph Murphy',\
-        description= 'The author points out various ways by which one can overcome defeat, hardships and keep on the righteous track to succeed by using only fair means. People who are low in confidence, need a direction in life or a guiding light to keep them motivated makes this subjective compulsion a key to success for any individual says the author.',\
+        description = 'The author points out various ways by which one can overcome defeat, hardships and keep on the righteous track to succeed by using only fair means. People who are low in confidence, need a direction in life or a guiding light to keep them motivated makes this subjective compulsion a key to success for any individual says the author.',\
         price=159.99,\
         image='fiction-2.jpg')
 
     book3 = Book(category_id=Category1.id,\
         title= 'Rich Dad Poor Dad',\
         author= 'Robert T. Kiyosaki',\
-        description= 'While so much in our world is changing a high speed, the lessons about money and the principles of Rich Dad Poor Dad haven’t changed. Today, as money continues to play a key role in our daily lives, the messages in Robert Kiyosaki’s international bestseller are more timely and more important than ever.',\
+        description = 'While so much in our world is changing a high speed, the lessons about money and the principles of Rich Dad Poor Dad haven’t changed. Today, as money continues to play a key role in our daily lives, the messages in Robert Kiyosaki’s international bestseller are more timely and more important than ever.',\
         price=400.99,\
         image='fiction-3.jpg')
 
     book4 = Book(category_id=Category2.id,\
         title= 'Memory: How To Develop, Train, And Use It',\
         author= 'William Walker Atkinson',\
-        description= 'The book, venturing into how to mentally influence others, is an informative guide that will enable us to further our retention power, making memorizing faster and effortless.',\
+        description = 'The book, venturing into how to mentally influence others, is an informative guide that will enable us to further our retention power, making memorizing faster and effortless.',\
         price=299.99,\
         image='non-fiction-1.jpg')
 
@@ -130,3 +130,21 @@ def dbseed():
         return 'There was an issue adding a Book in dbseed function'
 
     return 'DATA LOADED'
+
+
+@admin_bp.route('/dbdelete')
+def dbdelete():
+    # Delete all records
+    try:
+        Category.query.delete()
+        Book.query.delete()
+        db.session.commit()
+        return "DATA DELETED SUCCESSFULLY"
+    except:
+        return "SORRY!!! DATA NOT DELETED."
+
+@admin_bp.route('/showdata')
+def showdata():
+    categorydata = [Category.query.all()]
+    bookdata = [Book.query.all()]
+    return bookdata

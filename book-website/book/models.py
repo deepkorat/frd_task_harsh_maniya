@@ -8,7 +8,7 @@ class Category(db.Model):
      book = db.relationship('Book', backref='Category', cascade="all, delete-orphan")
 
      def __repr__(self):
-          return f"ID: {self.id}\nCategory: {self.name}"
+          return f"\nID: {self.id}\nCategory: {self.name}"
 
 class Book(db.Model):
      __tablename__ = 'book_details'
@@ -23,11 +23,14 @@ class Book(db.Model):
      # Define relationship with Category
 
      def __repr__(self):
-          return f"ID: {self.id}\nTitle: {self.title}\nAuthor: {self.author}"
+          return f"\nID: {self.id}\nTitle: {self.title}\nAuthor: {self.author}\nDescription: {self.description}\nPrice: {self.price}\nImage: {self.image}\nCategory: {self.category_id}"
 
-     def __init__(self, title, author, category_id):
+     def __init__(self, title, author, description,price, image, category_id):
           self.title = title
           self.author = author
+          self.description = description
+          self.price = price
+          self.image = image
           self.category_id = category_id
 
 
@@ -45,7 +48,7 @@ class Order(db.Model):
 
      customer_name = db.Column(db.String(255), nullable=False)
 
-     def __init__(self, customer_name):
+     def __init__(self, ):
           self.customer_name = customer_name
 
 
