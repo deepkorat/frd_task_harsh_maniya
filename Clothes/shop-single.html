@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.118.2">
+        <title>Cropsy - A way to live</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/bootstrap/carousel.css" rel="stylesheet"> 
+        <link href="css/product.css" rel="stylesheet">
+
+    </head>
+    <body>
+    <!--Toggle Dark mode-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+        <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Cropsy</a>
+              </li>
+          </ul>
+        </div>
+        <a class="navbar-brand text-end" href="#">
+          <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
+        </a>
+        </div>
+      </nav>
+
+    <!--Products-->
+    <section id="product-page" class="product-page p-b-0">
+        <div class="container">
+            <div class="product">
+                <div class="row m-b-40">
+                    <div class="col-lg-5">
+                        <div class="product-image">
+                            <!-- Carousel slider -->
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="img-fluid mx-auto" src="images/6.jpeg" alt=""> 
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="img-fluid mx-auto" src="images/10.jpeg" alt="">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="img-fluid mx-auto" src="images/11.jpeg" alt="">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="img-fluid mx-auto" src="images/4.jpeg" alt="">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev text-black" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: gray;"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: gray;"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- Carousel slider -->
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="product-description">
+                            <div class="product-category">Women</div>
+                            <div class="product-title">
+                                <h3><a href="#">Consume Tshirt</a></h3>
+                            </div>
+                            <div class="product-price"><ins>$39.00</ins>
+                            </div>
+                            <div class="product-reviews"><a href="#">3 customer reviews</a>
+                            </div>
+                            <div class="seperator m-b-10"></div>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                going through the cites of the word in</p>
+                            <div class="product-meta">
+                                <p>Tags: <a href="#" rel="tag">Clothing</a>, <a rel="tag" href="#">T-shirts</a>
+                                </p>
+                            </div>
+                            <div class="seperator m-t-20 m-b-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h6>Select the size</h6>
+                                <ul class="product-size">
+                                    <li>
+                                        <label>
+                                            <input type="radio" checked="checked" value="option1" name="product-size"><span>xs</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" checked="checked" value="option1" name="product-size"><span>s</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" checked="checked" value="option1" name="product-size"><span>m</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" checked="checked" value="option1" name="product-size"><span>l</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" checked="checked" value="option1" name="product-size"><span>xl</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <h6>Select the color</h6>
+                                <label class="sr-only">Color</label>
+                                <select style="padding:10px">
+                                    <option value="">Select color…</option>
+                                    <option value="">White</option>
+                                    <option value="" selected="selected">Green</option>
+                                    <option value="">Brown</option>
+                                    <option value="">Yellow</option>
+                                    <option value="">Pink</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <h6>Select quantity</h6>
+                                <div class="cart-product-quantity">
+                                    <div class="quantity m-l-5">
+                                        <input type="button" class="minus" value="-">
+                                        <input type="text" class="qty" value="1">
+                                        <input type="button" class="plus" value="+">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h6>Add to Cart</h6>
+                                <a class="btn" href="#"><i class="icon-shopping-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-t-0">
+        <div class="container">
+            <div class="heading-text heading-line text-center">
+                <h4>Related Products you may be interested!</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget-shop">
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/9.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Women</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Bolt Sweatshirt</a></h3>
+                                </div>
+                                <div class="product-price"><del>$30.00</del><ins>$15.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/8.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Women</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Consume Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/7.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Man</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Logo Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget-shop">
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/6.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Man</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Logo Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/5.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Women</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Consume Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/4.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Man</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Logo Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget-shop">
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/3.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Women</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Bolt Sweatshirt</a></h3>
+                                </div>
+                                <div class="product-price"><del>$30.00</del><ins>$15.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/2.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Women</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Consume Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#"><img src="images/1.jpeg" alt="Shop product image!">
+                                </a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-category">Man</div>
+                                <div class="product-title">
+                                    <h3><a href="#">Logo Tshirt</a></h3>
+                                </div>
+                                <div class="product-price"><ins>$39.00</ins>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="widget">
+                            <div class="widget-title">Cropsy</div>
+                            <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
+                                All rights reserved. Copyright © 2019. INSPIRO.</p>
+                            <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted" target="_blank">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Discover</div>
+                                    <ul class="list">
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Layouts</a></li>
+                                        <li><a href="#">Corporate</a></li>
+                                        <li><a href="#">Updates</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Customers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+  
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Features</div>
+                                    <ul class="list">
+                                        <li><a href="#">Layouts</a></li>
+                                        <li><a href="#">Headers</a></li>
+                                        <li><a href="#">Widgets</a></li>
+                                        <li><a href="#">Footers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+  
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Pages</div>
+                                    <ul class="list">
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Support</div>
+                                    <ul class="list">
+                                        <li><a href="#">Help Desk</a></li>
+                                        <li><a href="#">Documentation</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
+        </div>
+        <div class="copyright-content">
+            <div class="container">
+                <div class="copyright-text text-center">© 2023 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="#" target="_blank" rel="noopener"> Cropsy</a> </div>
+            </div>
+        </div>
+      </footer>
+    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
