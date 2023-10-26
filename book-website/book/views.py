@@ -6,8 +6,8 @@ main_bp = Blueprint('main', __name__)
 
 @main_bp.route('/')
 def index():
-     category = Category.query.order_by(Category.name).all()
-     return render_template('index.html', categories = category)
+     base_category = Category.query.order_by(Category.name).all()
+     return render_template('index.html', categories = base_category)
 
 @main_bp.route('/books/<int:category_id>')
 def book(category_id):
