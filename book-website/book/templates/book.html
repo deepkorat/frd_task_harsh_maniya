@@ -30,7 +30,7 @@
           <h4>{{book.price}}</h4>
         </div>
         <div class="card-footer">
-          <a href="product-page.html" class="btn btn-outline-dark mt-auto" target="_blank">View Book</a>
+          <a href="{{url_for('main.bookdetail', book_id=book.id)}}" class="btn btn-outline-dark mt-auto" target="_blank">View Book</a>
           <a href="add-to-cart.html" class="btn btn-outline-dark mt-auto" target="_blank">Add to Cart</a>
           <br><br>
 

@@ -14,3 +14,8 @@ def book(category_id):
      books = Book.query.filter(Book.category_id==category_id)
      category = Category.query.filter(Category.id == category_id).first()
      return render_template('book.html', books=books, category = category)
+
+@main_bp.route('/bookdetails/<int:book_id>')
+def bookdetail(book_id):
+     bookdetail = Book.query.filter(Book.id == book_id).first()
+     return render_template('bookdetails.html', bookdetail=bookdetail)
