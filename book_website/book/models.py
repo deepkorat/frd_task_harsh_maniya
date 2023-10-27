@@ -44,11 +44,12 @@ class Order(db.Model):
      email = db.Column(db.String(128))
      phone = db.Column(db.String(32))
      total_cost = db.Column(db.Float)
-     date = db.Column(db.DateTime)
+     # book = db.relationship("Book", secondary=orderdetails, backref="orders")
 
-     customer_name = db.Column(db.String(255), nullable=False)
+     def __repr__(self):
+          return f"\nID: {self.id}\nStatus: {self.status}\nFirst Name: {self.firstname}\nSurname: {self.surname}\nEmail: {self.email}\nPhone: {self.phone}\nTotal Cost: {self.total_cost}\nBook: {self.title}"
 
-     def __init__(self, ):
+     def __init__(self, status, firstname, surname, email, phone, total_cost):
           self.customer_name = customer_name
 
 
@@ -63,7 +64,11 @@ class OrderDetail(db.Model):
      order = db.relationship('Order', backref=db.backref('order_details', lazy=True))
      book = db.relationship('Book', backref=db.backref('order_details', lazy=True))
 
+     def __repr__(self):
+          return f"\nID: {self.id}\nOrder ID: {self.order_id}\nBook ID: {self.book_id}\nQuantity: {self.quantity}"
+
      def __init__(self, order_id, book_id, quantity):
           self.order_id = order_id
           self.book_id = book_id
           self.quantity = quantity
+
