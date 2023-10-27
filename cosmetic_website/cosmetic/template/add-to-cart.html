@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100"
+    style="background-image: url('/image/3.jpg'); background-size: cover; height: 30px;">
+
+    <!-- This is navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary ">
+        <a class="navbar-brand" href="#">Cosmetic Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/product.html">Product</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark  border rounded-sm" href="add-to-cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <b class="text-light">
+                            Cart
+                        </b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <h2>Your Shopping Cart</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mineral Foundation</td>
+                    <td>$19.99</td>
+                    <td>1</td>
+                    <td>$19.99</td>
+                </tr>
+                <!-- More cart items will be dynamically added here in a real dynamic scenario -->
+            </tbody>
+        </table>
+        <h4>Total: $19.00</h4>
+        <br>
+        
+    </div>
+
+
+    <!-- this is form  -->
+    <div class="container">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="ex. Mac doz" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+            </div>
+            <input type="email" class="form-control" placeholder="ex. macdoz35@gmail.com" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Shipping Address</span>
+            </div>
+            <textarea class="form-control" placeholder="B-304, Guess Villa" aria-label="With textarea"></textarea>
+        </div>
+        <a href="#" class="btn btn-info mt-4 mb-5">Continue Shopping</a>
+        <br>
+    </div>
+
+
+    <!-- footer -->
+    <div class="mt-auto">
+        <footer class="bg-secondary text-white text-center py-3">
+             <div class="row d-flex justify-content-around">
+                  <div>
+                       <h2>Cosmetic Store</h2>
+                       <p>&copy; 2023 Cosmetic Store. All Rights Reserved.</p>
+                  </div>
+                  <div >
+                       <h5>Links: </h5>
+                       <a href="/" class="nav-link text-light">Home</a>
+                       <a href="/product.html" class="nav-link text-light">Product</a>
+                  </div>
+             </div>
+        </footer>
+   </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
