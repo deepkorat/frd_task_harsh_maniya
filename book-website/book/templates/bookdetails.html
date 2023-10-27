@@ -13,7 +13,7 @@
                 <h3>Price: {{bookdetail.price}}</h3>
                 <p>Available in stock</p>
 
-                <a href="add-to-cart.html" class="btn btn-dark">Add to Cart</a>
+                <a href="{{url_for('main.cart', book_id = bookdetail.id)}}" class="btn btn-dark">Add to Cart</a>
                 <br><br>
             </div>
         </div>
